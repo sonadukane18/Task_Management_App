@@ -1,4 +1,4 @@
-#Task Management Application
+# Task Management Application
 
 This repository contains a simple task management application implemented in Python using Flask for the backend and vanilla JavaScript for the frontend.
 The application allows users to add, remove, list,and recommend tasks according to the priority.
@@ -17,10 +17,10 @@ The application allows users to add, remove, list,and recommend tasks according 
 * Machine Learning: scikit-learn (Multinomial Naive Bayes)
 * Data Storage: CSV file (tasks.csv)
   
-`How to Use:`
+## How to Use:
 
 * Clone the repository to your local machine.
-* Install the required dependencies listed in requirements.txt.
-* Run the Flask application by executing python main.py in your terminal.
+* Install the required dependencies listed in `requirements.txt`.
+* Run the Flask application by executing `python main.py` in your terminal.
 * Access the application in your web browser at http://localhost:5000.
 * Use the provided menu options to interact with the task management system.
