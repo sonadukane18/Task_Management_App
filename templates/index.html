@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskList Manager</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="mt-4 mb-4">TaskList Manager</h1>
+        <div class="task-icon"><i class="fas fa-tasks"></i></div>
+        <div class="recommendation-icon"><i class="fas fa-lightbulb"></i></div>
+        <!-- Task form -->
+        <form id="taskForm" class="mb-4">
+            <div class="form-group">
+                <label for="taskDescription">Task Description</label>
+                <input type="text" class="form-control" id="taskDescription" placeholder="Enter task description">
+            </div>
+            <div class="form-group">
+                <label for="taskPriority">Task Priority</label>
+                <select class="form-control" id="taskPriority">
+                    <option selected disabled>Choose...</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+        <!-- Task list -->
+
+        <div id="taskList">
+            <h3>Task List</h3>
+            <ul class="list-group">
+                <!-- Task items will be dynamically added here -->
+            </ul>
+        </div>
+        <!-- Recommendation -->
+
+        <div id="recommendation" class="mt-4">
+            <h3>Recommended Task</h3>
+            <div id="recommendedTask" class="alert alert-success" role="alert">
+                <!-- Recommended task will be displayed here -->
+            </div>
+            <button id="recommendTask" class="btn btn-success">Recommend Task</button>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
